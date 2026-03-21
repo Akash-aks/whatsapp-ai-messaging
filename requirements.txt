@@ -1,0 +1,62 @@
+# WhatsApp AI Messaging - Requirements
+# Updated: February 2026
+
+# ==========================================
+# CORE DEPENDENCIES (Required)
+# ==========================================
+pandas>=2.1.4
+openpyxl>=3.1.2
+python-dotenv>=1.0.0
+
+# ==========================================
+# WEB AUTOMATION (Required)
+# ==========================================
+selenium>=4.6.0             # WhatsApp Web automation (built-in selenium-manager)
+webdriver-manager>=4.0.1    # Fallback ChromeDriver manager
+
+# ==========================================
+# AI/LLM PROVIDERS (At least ONE required)
+# ==========================================
+# Free AI Providers (Recommended)
+groq>=0.4.0                 # FREE - Groq API (Llama 3.3 70B, fastest)
+google-generativeai>=0.3.2  # FREE - Google Gemini 2.0 Flash
+openai>=1.12.0              # PAID - OpenAI GPT-3.5/GPT-4 (optional)
+
+# Offline AI (Optional - No API key needed)
+# requests>=2.31.0          # Already included below, used for Ollama communication
+
+# ==========================================
+# UTILITIES (Required)
+# ==========================================
+requests>=2.31.0            # HTTP requests (for Ollama and API calls)
+urllib3>=2.0.0              # HTTP client
+colorlog>=6.8.0             # Enhanced logging
+
+# ==========================================
+# BUILD TOOLS (Development only)
+# ==========================================
+# Uncomment these if you want to build the .exe
+# pyinstaller>=6.0.0        # For creating standalone .exe files
+
+# ==========================================
+# OPTIONAL ENHANCEMENTS
+# ==========================================
+# pillow>=10.2.0            # Image processing (not currently used)
+
+# ==========================================
+# NOTES:
+# ==========================================
+# 1. Install all dependencies:
+#    pip install -r requirements.txt
+#
+# 2. For free AI, you need at least ONE of:
+#    - groq (recommended - fastest)
+#    - google-generativeai (recommended - good quality)
+#    - Ollama (offline, install from ollama.com)
+#
+# 3. Tkinter (GUI) is built-in with Python - no installation needed
+#
+# 4. To build .exe, also install:
+#    pip install pyinstaller
+#
+# 5. Anthropic/Claude was REMOVED (not free)

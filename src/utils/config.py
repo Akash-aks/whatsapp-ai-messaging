@@ -1,8 +1,5 @@
 """Configuration module for WhatsApp AI Automation
 Supported free providers: Google Gemini, Groq, Ollama
-Note: Anthropic/Claude removed (not free)
-
-PYINSTALLER COMPATIBLE VERSION
 """
 
 import os

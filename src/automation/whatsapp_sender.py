@@ -210,11 +210,22 @@ class WhatsAppSender:
 
             # Override wait timeout for login (needs more time)
             login_wait = WebDriverWait(self.driver, timeout)
+            
+            # A more resilient way to detect login
+            stable_markers = [
+                '//div[@role="textbox"]',      # Search box
+                '//div[@id="pane-side"]',      # Chat list
+                '//header[@role="banner"]',    # Top profile header
+                '//span[@data-icon="chat"]'    # The "New Chat" icon
+            ]
+            combined_query = " | ".join(stable_markers)
 
             # Wait for the search box to appear (indicates successful login)
             login_wait.until(
                 EC.presence_of_element_located(
-                    (By.XPATH, '//div[@contenteditable="true"][@data-tab="3"]')
+                    #(By.XPATH, '//div[@contenteditable="true"][@data-tab="3"]')
+                    #(By.XPATH, '//div[@contenteditable="true"][@role="textbox"]')
+                    (By.XPATH, combined_query)
                 )
             )
 

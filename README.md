@@ -5,6 +5,9 @@ A production-ready desktop application for automated, AI-powered personalized Wh
 **Perfect for:** Final year engineering projects, small business marketing automation, customer communication
 
 ---
+<img width="1919" height="1004" alt="image" src="https://github.com/user-attachments/assets/6104cf30-62c8-4b70-9dad-a905c817dda9" />
+
+---
 
 ## 🌟 Key Features
 

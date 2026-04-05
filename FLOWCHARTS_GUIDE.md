@@ -1,6 +1,6 @@
 # Flowcharts & Diagrams for Project Documentation
 
-This guide provides all the flowcharts and diagrams you need for your final year project documentation.
+This guide provides all the flowcharts and diagrams needed for this project design.
 
 ---
 
